@@ -1,5 +1,5 @@
 {
-  "name": "match",
+  "name": "pmatch",
   "version": "0.1.0",
   "description": "",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/keyanzhang/match.git"
+    "url": "git+https://github.com/keyanzhang/pmatch.js.git"
   },
   "author": "Keyan Zhang <root@keyanzhang.com> (http://keyanzhang.com/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/keyanzhang/match/issues"
+    "url": "https://github.com/keyanzhang/pmatch.js/issues"
   },
-  "homepage": "https://github.com/keyanzhang/match#readme",
+  "homepage": "https://github.com/keyanzhang/pmatch.js#readme",
   "dependencies": {
     "acorn": "^1.2.2",
     "lodash": "^3.9.3"
