@@ -1,3 +1,5 @@
+'use strict';
+
 jest.autoMockOff();
 
 var FunctionWrapper = require('../FunctionWrapper');
@@ -61,7 +63,47 @@ var funcs = [
     {y: 255,
      x: 12},
     12 - 255
-  ]
+  ],
+  [
+    (x)=> {return 12;},
+    ['x'],
+    {},
+    12
+  ],
+  [ function foo() {return 42;},
+    [],
+    {x: 2350},
+    42
+  ],
+  [
+    function bar(x) {return Math.sqrt(x);},
+    ['x'],
+    {
+      y: 255,
+      x: 16
+    },
+    4
+  ],
+  [
+    function baz(x, y) {return x + 2 * y;},
+    ['x', 'y'],
+    {
+      y: 12,
+      x: 15
+    },
+    15 + 24
+  ],
+  [
+    function spaces(m,  x,y     , z, n) {return x - y - z;},
+    ['m', 'x', 'y', 'z', 'n'],
+    {
+      z: 25,
+      y: 12,
+      m: 120,
+      x: 4
+    },
+    4 - 12 - 25
+  ],
 ];
 
 _.forEach(funcs, function(x, idx) {

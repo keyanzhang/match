@@ -2,7 +2,6 @@
 
 var _ = require('lodash');
 
-
 function match(x, table) {
   var patternStr;
   var binding;
